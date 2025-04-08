@@ -18,19 +18,25 @@ button{
 }
 
 h1{
-  font-size: $font-size-huge;
+  font-size: $font-size-extra-large;
+  font-family: $font-family-heading;
+  font-weight: $font-weight-semibold;
 }
 
 h2{
-  font-size: $font-size-extra-large;
+  font-size: $font-size-large;
+  font-family: $font-family-heading;
+  font-weight: $font-weight-semibold;
 }
 
 h3{
-  font-size: $font-size-large;
+  font-size: $font-size-medium;
+  font-family: $font-family-heading;
+  font-weight: $font-weight-semibold;
 }
 
 h4{
-  font-size: $font-size-medium;
+  font-size: $font-size-normal;
 }
 
 p{
