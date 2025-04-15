@@ -29,7 +29,7 @@ function show_template() {
  * 
  */
 $theme = wp_get_theme();
-define('THEME_VERSION', $theme->get('Version'));
+define('KKF_THEME_VERSION', $theme->get('Version'));
 
 /**
  * Use cdn jquery instead of WordPress'
@@ -52,7 +52,7 @@ function enqueue_scripts(){
 
   wp_register_script(
     'bootstrap-scripts',
-    'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js',
+    'https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js',
     array('jquery'),
     '5.2.3',
     true
@@ -79,7 +79,7 @@ function enqueue_block_editor_scripts(){
 
   wp_register_script(
     'bootstrap-scripts',
-    'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js',
+    'https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js',
     array('jquery'),
     '5.2.3',
     true
@@ -108,7 +108,7 @@ function add_script_meta($tag, $handle){
       break;
 
     case 'bootstrap-scripts':
-      $tag = str_replace('></script>', ' integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>', $tag);
+      $tag = str_replace('></script>', ' integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>', $tag);
       break;
   }
 
