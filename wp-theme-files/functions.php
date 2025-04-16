@@ -266,9 +266,9 @@ function reusable_blocks_admin_menu(){
  */
 add_action('login_enqueue_scripts', __NAMESPACE__ . '\login_logo');
 function login_logo(){
-  $image_width = '525';
-  $image_height = '110';
-  $image_url = get_stylesheet_directory_uri() . '/images/logo.png'; ?>
+  $image_width = '256';
+  $image_height = '150';
+  $image_url = get_stylesheet_directory_uri() . '/assets/images/logo.png'; ?>
 
   <style>
 	  #login{
