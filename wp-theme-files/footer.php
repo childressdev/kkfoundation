@@ -37,7 +37,7 @@
                   </div>
                   <div class="footer-contact_info">
                     <h4>PHONE</h4>
-                    <p><a href="tel:<?php echo esc_url(preg_replace('/[^\d]/', '', $phone)); ?>"><?php echo esc_html($phone); ?></a></p>
+                    <p><a href="<?php echo esc_url('tel:' . preg_replace('/[^\d]/', '', $phone)); ?>"><?php echo esc_html($phone); ?></a></p>
                   </div>
                 </div>
               <?php endif; ?>
@@ -51,7 +51,7 @@
                   </div>
                   <div class="footer-contact_info">
                     <h4>EMAIL</h4>
-                    <p><a href="mailto:<?php echo esc_url($email); ?>"><?php echo esc_html($email); ?></a></p>
+                    <p><a href="<?php echo esc_url('mailto:' . $email); ?>"><?php echo esc_html($email); ?></a></p>
                   </div>
                 </div>
               <?php endif; ?>
@@ -85,7 +85,7 @@
           <p>website created by <a href="https://childressagency.com" target="_blank">Childress Agency</a></p>
         </div>
         <div class="social">
-          <?php get_template_part('partials', 'social_media'); ?>
+          <?php get_template_part('partials/social_media'); ?>
         </div>
       </div>
     </div>

@@ -51,7 +51,7 @@
 
         <?php $phone = get_field('phone_number', 'option'); ?>
         <?php if($phone): ?>
-          <a href="tel:<?php echo esc_url(preg_replace('/[^\d]/', '', $phone));  ?>" class="header-phone-mobile">
+          <a href="<?php echo esc_url('tel: ' . preg_replace('/[^\d]/', '', $phone));  ?>" class="header-phone-mobile">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icon-phone-header.png" alt="" />
           </a>
         <?php endif; ?>
@@ -79,7 +79,7 @@
         <?php if($phone): ?>
           <div class="header-ctas d-none d-xl-flex">
             <div class="header-cta">
-              <a href="tel:<?php echo esc_url(preg_replace('/[^\d]/', '', $phone));  ?>" class="header-phone">
+              <a href="<?php echo esc_url('tel:' . preg_replace('/[^\d]/', '', $phone));  ?>" class="header-phone">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/icon-phone-header.png" alt="" />
                 <span><?php echo esc_html($phone); ?></span>
               </a>
