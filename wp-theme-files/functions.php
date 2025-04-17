@@ -195,7 +195,7 @@ require_once dirname(__FILE__) . '/includes/kkf-options-pages.php';
  * @param string $menu_icon Default is dashicons-admin-post
  * @param array $options Post Type Arguments
  */
-add_action('init', __NAMESPACE__ . '\register_post_types');
+//add_action('init', __NAMESPACE__ . '\register_post_types');
 function register_post_types(){
   cpts\create_post_type(
     'service',
@@ -215,7 +215,7 @@ function register_post_types(){
  * @param boolean $hierarchical Default is true
  * @param array $options Taxonomy arguments
  */
-add_action('init', __NAMESPACE__ . '\register_taxonomies');
+//add_action('init', __NAMESPACE__ . '\register_taxonomies');
 function register_taxonomies(){
   cpts\create_taxonomy(
     'service_category',
