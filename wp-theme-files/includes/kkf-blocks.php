@@ -31,7 +31,14 @@ function register_custom_block_styles(){
     'core/media-text',
     array(
       'name' => 'small-icon',
-      'label' => esc_html__('Small Icon', 'jel')
+      'label' => esc_html__('Small Icon', 'kkf')
+    )
+  );
+  register_block_style(
+    'core/media-text',
+    array(
+      'name' => 'medium-icon',
+      'label' => esc_html__('Medium Icon', 'kkf')
     )
   );
 
@@ -39,7 +46,7 @@ function register_custom_block_styles(){
     'core/heading',
     array(
       'name' => 'text-shadow',
-      'label' => esc_html__('Text Shadow', 'jel')
+      'label' => esc_html__('Text Shadow', 'kkf')
     )
   );
 
@@ -47,7 +54,22 @@ function register_custom_block_styles(){
     'core/paragraph',
     array(
       'name' => 'text-shadow',
-      'label' => esc_html__('Text Shadow', 'jel')
+      'label' => esc_html__('Text Shadow', 'kkf')
+    )
+  );
+
+  register_block_style(
+    'wp-bootstrap-blocks/row',
+    array(
+      'name' => 'same-height',
+      'label' => esc_html__('Same Height Columns', 'kkf')
+    )
+  );
+  register_block_style(
+    'wp-bootstrap-blocks/row',
+    array(
+      'name' => 'align-items-center',
+      'label' => esc_html__('Align Items Center', 'kkf')
     )
   );
 }
@@ -64,8 +86,9 @@ function customize_core_block_styles(){
       'core/heading',
       'core/paragraph',
       'core/media-text',
+      'wp-bootstrap-blocks/row'
     ),
-    'jel'
+    'kkf'
   );
 }
 
