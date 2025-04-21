@@ -38,3 +38,9 @@
   border-radius: 30px;
   mask: conic-gradient(#000 0 0) content-box exclude, conic-gradient(#000 0 0);
 }
+
+.wp-block-list.is-style-centered-list {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}

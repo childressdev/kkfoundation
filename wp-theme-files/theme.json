@@ -214,6 +214,11 @@
           "name": "Light Shadow",
           "slug": "light-shadow",
           "shadow": "0px 4px 8px rgba(0,0,0,.05)"
+        },
+        {
+          "name": "Left Shadow",
+          "slug": "left-shadow",
+          "shadow": "-20px 20px 44px rgba(0, 0, 0, 0.15)"
         }
       ]
     }

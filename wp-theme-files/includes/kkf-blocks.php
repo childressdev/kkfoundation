@@ -80,6 +80,13 @@ function register_custom_block_styles(){
       'label' => esc_html__('Stylized Ordered List', 'kkf')
     )
   );
+  register_block_style(
+    'core/list',
+    array(
+      'name' => 'centered-list',
+      'label' => esc_html__('Centered List', 'kkf')
+    )
+  );
 }
 
 /**
