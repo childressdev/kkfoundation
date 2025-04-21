@@ -72,6 +72,14 @@ function register_custom_block_styles(){
       'label' => esc_html__('Align Items Center', 'kkf')
     )
   );
+
+  register_block_style(
+    'core/list',
+    array(
+      'name' => 'stylized-ordered-list',
+      'label' => esc_html__('Stylized Ordered List', 'kkf')
+    )
+  );
 }
 
 /**
@@ -86,7 +94,8 @@ function customize_core_block_styles(){
       'core/heading',
       'core/paragraph',
       'core/media-text',
-      'wp-bootstrap-blocks/row'
+      'wp-bootstrap-blocks/row',
+      'core/list'
     ),
     'kkf'
   );

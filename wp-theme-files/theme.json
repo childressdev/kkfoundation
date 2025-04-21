@@ -51,6 +51,11 @@
           "gradient": "linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 90%)",
           "name": "Y Dark to Light",
           "slug": "y-dark-to-light"
+        },
+        {
+          "gradient": "linear-gradient(270deg,rgba(217, 254, 208, 1) 0%, rgba(64, 128, 36, 1) 100%)",
+          "name": "Secondary to Tertiary",
+          "slug": "secondary-to-tertiary"
         }
       ]
     },
