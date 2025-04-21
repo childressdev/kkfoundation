@@ -80,3 +80,13 @@ img.alignright{
   font-weight: $font-weight-medium;
   font-family: $font-family-heading;
 }
+
+.object-fit-contain{
+  img{
+    object-fit: contain !important;
+  }
+}
+
+figure.mb-0 > img{
+  margin-bottom: 0px !important;
+}

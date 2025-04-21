@@ -34,6 +34,6 @@ $font-size-huge: #{fluid(56px, 70px, map.get($grid-breakpoints, sm), map.get($gr
 
 $transition-normal: all .2s ease;
 $text-shadow: 0px 3px 6px rgba(0, 0, 0, 1);
-$box-shadow: 0px 5px 10px rgba(0,0,0,.25);
+$box-shadow: 0px 4px 8px rgba(0,0,0,.05);
 
 $enable-negative-margins: true;

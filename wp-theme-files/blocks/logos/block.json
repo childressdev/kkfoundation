@@ -1,0 +1,17 @@
+{
+  "name": "kkf/logos",
+  "title": "Logos",
+  "description": "Show a grid of logos.",
+  "style": "file:./style.css",
+  "category": "childressagency",
+  "icon": "block-default",
+  "apiVersion": 2,
+  "version": "1.0",
+  "keywords": [],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "styles": [],
+  "supports": {}
+}

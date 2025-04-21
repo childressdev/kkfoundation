@@ -1,0 +1,19 @@
+.logos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+
+  .logo{
+    height: 160px;
+    width: 200px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--wp--preset--shadow--light-shadow);
+  }
+}
