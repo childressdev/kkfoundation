@@ -87,6 +87,14 @@ function register_custom_block_styles(){
       'label' => esc_html__('Centered List', 'kkf')
     )
   );
+
+  register_block_style(
+    'core/group',
+    array(
+      'name' => 'gradient-border',
+      'label' => esc_html__('Gradient Border', 'kkf')
+    )
+  );
 }
 
 /**
@@ -102,7 +110,8 @@ function customize_core_block_styles(){
       'core/paragraph',
       'core/media-text',
       'wp-bootstrap-blocks/row',
-      'core/list'
+      'core/list',
+      'core/group'
     ),
     'kkf'
   );
