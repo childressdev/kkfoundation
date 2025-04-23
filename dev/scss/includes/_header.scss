@@ -86,8 +86,7 @@
       vertical-align: middle;
     }
 
-    &.show:after,
-    &.active:after{
+    &.show:after{
       transform: rotate(180deg);
     }
   }
