@@ -1,0 +1,19 @@
+{
+  "name": "kkf/testimonials-slider",
+  "title": "Testimonials Slider",
+  "description": "Display a slider of testimonials.",
+  "viewStyle": "swiper-styles",
+  "style": "file:./style.css",
+  "viewScript": ["swiper", "testimonials-slider"],
+  "category": "childressagency",
+  "icon": "slides",
+  "apiVersion": 2,
+  "version": "1.1",
+  "keywords": [],
+  "acf": {
+    "mode": "preview",
+    "renderTemplate": "render.php"
+  },
+  "styles": [],
+  "supports": {}
+}
