@@ -84,6 +84,7 @@ function create_social_media_field(){
               'discord' => esc_html__('Discord', 'kkf'),
               'telegram' => esc_html__('Telegram', 'kkf'),
               'google' => esc_html__('Google', 'kkf'),
+              'yelp' => esc_html__('Yelp', 'kkf'),
             ),
             'default_value' => false,
             'return_format' => 'array',

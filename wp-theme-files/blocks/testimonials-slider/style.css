@@ -1,0 +1,47 @@
+#testimonials-slider .swiper-slide {
+  height: auto;
+}
+
+.testimonial {
+  background: #fff;
+  background: linear-gradient(180deg, rgba(217, 254, 208, 0.33) 0%, rgb(255, 255, 255) 100%);
+  border: 1px solid #D9FED0;
+  border-radius: 20px;
+  padding: 30px 20px;
+  max-width: 500px;
+  margin: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.testimonial .stars-quote {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.testimonial_text {
+  height: 100%;
+}
+.testimonial .author-name {
+  font-family: var(--wp--preset--font-family--alt-font);
+  font-weight: 700;
+  font-size: var(--wp--preset--font-size--kkf-normal);
+  display: block;
+  font-style: normal;
+}
+.testimonial .author-location {
+  display: block;
+  font-size: var(--wp--preset--font-size--kkf-small);
+  font-style: normal;
+}
+
+.testimonials-pagination {
+  text-align: center;
+  margin-top: 60px;
+}
+.testimonials-pagination .swiper-pagination-bullet {
+  height: 20px;
+  width: 20px;
+  background-color: var(--wp--preset--color--dark-gray);
+}

@@ -29,7 +29,7 @@ function show_template() {
  * 
  */
 $theme = wp_get_theme();
-define('THEME_VERSION', $theme->get('Version'));
+define('KKF_THEME_VERSION', $theme->get('Version'));
 
 /**
  * Use cdn jquery instead of WordPress'
@@ -52,7 +52,7 @@ function enqueue_scripts(){
 
   wp_register_script(
     'bootstrap-scripts',
-    'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js',
+    'https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js',
     array('jquery'),
     '5.2.3',
     true
@@ -60,7 +60,7 @@ function enqueue_scripts(){
 
   wp_register_script(
     $handle,
-    get_stylesheet_directory_uri() . '/js/custom-scripts.min.js',
+    get_stylesheet_directory_uri() . '/assets/js/custom-scripts.min.js',
     array('jquery', 'bootstrap-scripts'),
     KKF_THEME_VERSION,
     true
@@ -68,6 +68,22 @@ function enqueue_scripts(){
 
   wp_enqueue_script('bootstrap-scripts');
   wp_enqueue_script($handle);
+  
+  wp_register_script(
+    'swiper',
+    get_stylesheet_directory_uri() . '/assets/js/swiper.min.js',
+    array(),
+    KKF_THEME_VERSION,
+    true
+  );
+  
+  wp_register_script(
+    'testimonials-slider',
+    get_stylesheet_directory_uri() . '/blocks/testimonials-slider/script.js',
+    array('swiper'),
+    KKF_THEME_VERSION,
+    true
+  );
 }
 
 /**
@@ -79,7 +95,7 @@ function enqueue_block_editor_scripts(){
 
   wp_register_script(
     'bootstrap-scripts',
-    'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js',
+    'https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js',
     array('jquery'),
     '5.2.3',
     true
@@ -95,6 +111,22 @@ function enqueue_block_editor_scripts(){
 
   wp_enqueue_script('bootstrap-scripts');
   wp_enqueue_script($handle);
+  
+  wp_register_script(
+    'swiper',
+    get_stylesheet_directory_uri() . '/assets/js/swiper.min.js',
+    array(),
+    KKF_THEME_VERSION,
+    true
+  );
+  
+  wp_register_script(
+    'testimonials-slider',
+    get_stylesheet_directory_uri() . '/blocks/testimonials-slider/script.js',
+    array('swiper'),
+    KKF_THEME_VERSION,
+    true
+  );
 }
 
 /**
@@ -108,7 +140,7 @@ function add_script_meta($tag, $handle){
       break;
 
     case 'bootstrap-scripts':
-      $tag = str_replace('></script>', ' integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>', $tag);
+      $tag = str_replace('></script>', ' integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>', $tag);
       break;
   }
 
@@ -132,6 +164,13 @@ function enqueue_styles(){
   );
 
   wp_enqueue_style($handle);
+  
+  wp_register_style(
+    'swiper-styles',
+    get_stylesheet_directory_uri() . '/assets/css/swiper.min.css',
+    array(),
+    KKF_THEME_VERSION
+  );
 }
 
 /**
@@ -195,7 +234,7 @@ require_once dirname(__FILE__) . '/includes/kkf-options-pages.php';
  * @param string $menu_icon Default is dashicons-admin-post
  * @param array $options Post Type Arguments
  */
-add_action('init', __NAMESPACE__ . '\register_post_types');
+//add_action('init', __NAMESPACE__ . '\register_post_types');
 function register_post_types(){
   cpts\create_post_type(
     'service',
@@ -215,7 +254,7 @@ function register_post_types(){
  * @param boolean $hierarchical Default is true
  * @param array $options Taxonomy arguments
  */
-add_action('init', __NAMESPACE__ . '\register_taxonomies');
+//add_action('init', __NAMESPACE__ . '\register_taxonomies');
 function register_taxonomies(){
   cpts\create_taxonomy(
     'service_category',
@@ -266,9 +305,9 @@ function reusable_blocks_admin_menu(){
  */
 add_action('login_enqueue_scripts', __NAMESPACE__ . '\login_logo');
 function login_logo(){
-  $image_width = '525';
-  $image_height = '110';
-  $image_url = get_stylesheet_directory_uri() . '/images/logo.png'; ?>
+  $image_width = '256';
+  $image_height = '150';
+  $image_url = get_stylesheet_directory_uri() . '/assets/images/logo.png'; ?>
 
   <style>
 	  #login{

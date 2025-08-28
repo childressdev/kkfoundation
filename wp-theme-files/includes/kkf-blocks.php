@@ -31,7 +31,14 @@ function register_custom_block_styles(){
     'core/media-text',
     array(
       'name' => 'small-icon',
-      'label' => esc_html__('Small Icon', 'jel')
+      'label' => esc_html__('Small Icon', 'kkf')
+    )
+  );
+  register_block_style(
+    'core/media-text',
+    array(
+      'name' => 'medium-icon',
+      'label' => esc_html__('Medium Icon', 'kkf')
     )
   );
 
@@ -39,7 +46,7 @@ function register_custom_block_styles(){
     'core/heading',
     array(
       'name' => 'text-shadow',
-      'label' => esc_html__('Text Shadow', 'jel')
+      'label' => esc_html__('Text Shadow', 'kkf')
     )
   );
 
@@ -47,7 +54,45 @@ function register_custom_block_styles(){
     'core/paragraph',
     array(
       'name' => 'text-shadow',
-      'label' => esc_html__('Text Shadow', 'jel')
+      'label' => esc_html__('Text Shadow', 'kkf')
+    )
+  );
+
+  register_block_style(
+    'wp-bootstrap-blocks/row',
+    array(
+      'name' => 'same-height',
+      'label' => esc_html__('Same Height Columns', 'kkf')
+    )
+  );
+  register_block_style(
+    'wp-bootstrap-blocks/row',
+    array(
+      'name' => 'align-items-center',
+      'label' => esc_html__('Align Items Center', 'kkf')
+    )
+  );
+
+  register_block_style(
+    'core/list',
+    array(
+      'name' => 'stylized-ordered-list',
+      'label' => esc_html__('Stylized Ordered List', 'kkf')
+    )
+  );
+  register_block_style(
+    'core/list',
+    array(
+      'name' => 'centered-list',
+      'label' => esc_html__('Centered List', 'kkf')
+    )
+  );
+
+  register_block_style(
+    'core/group',
+    array(
+      'name' => 'gradient-border',
+      'label' => esc_html__('Gradient Border', 'kkf')
     )
   );
 }
@@ -64,8 +109,11 @@ function customize_core_block_styles(){
       'core/heading',
       'core/paragraph',
       'core/media-text',
+      'wp-bootstrap-blocks/row',
+      'core/list',
+      'core/group'
     ),
-    'jel'
+    'kkf'
   );
 }
 
@@ -88,7 +136,7 @@ function load_blocks(){
           'block-' . $block,
           $block_folder . '/style.css',
           null,
-          THEME_VERSION
+          KKF_THEME_VERSION
         );
       }
 
@@ -150,13 +198,13 @@ function get_blocks(){
   $blocks = get_option('kkf_blocks');
   $version = get_option('kkf_blocks_version');
   if(empty($blocks) 
-      || version_compare(THEME_VERSION, $version) 
+      || version_compare(KKF_THEME_VERSION, $version) 
       || (function_exists('wp_get_environment_type') && wp_get_environment_type() !== 'production')){
     $blocks = scandir(get_template_directory() . '/blocks/');
     $blocks = array_values(array_diff($blocks, array('..', '.', '.DS_Store', '_base-block')));
 
     update_option('kkf_blocks', $blocks);
-    update_option('kkf_blocks_version', THEME_VERSION);
+    update_option('kkf_blocks_version', KKF_THEME_VERSION);
   }
 
   return $blocks;

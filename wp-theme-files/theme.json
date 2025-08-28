@@ -6,29 +6,29 @@
     "color": {
       "palette": [
         {
-          "color": "#e8b440",
+          "color": "#79E44B",
           "name": "Primary",
           "slug": "primary"
         },
         {
-          "color": "#c0840c",
+          "color": "#408024",
           "name": "Secondary",
           "slug": "secondary"
         },
         {
-          "color": "#e6e6e6",
+          "color": "#D9FED0",
           "name": "Tertiary",
           "slug": "tertiary"
         },
         {
-          "color": "#9d9d9d",
-          "name": "Quaternary",
-          "slug": "quaternary"
+          "color": "#333",
+          "name": "Dark Gray",
+          "slug": "dark-gray"
         },
         {
-          "color": "#707070",
-          "name": "Quinary",
-          "slug": "quinary"
+          "color": "#d9d9d9",
+          "name": "Light Gray",
+          "slug": "light-gray"
         },
         {
           "color": "#ffffff",
@@ -43,60 +43,151 @@
       ],
       "gradients": [
         {
-          "gradient": "linear-gradient(to right, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.2) 100%)",
-          "name": "Dark to Light",
-          "slug": "dark-to-light"
+          "gradient": "linear-gradient(90deg,rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 100%)",
+          "name": "X Dark to Light",
+          "slug": "x-dark-to-light"
+        },
+        {
+          "gradient": "linear-gradient(180deg,rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 90%)",
+          "name": "Y Dark to Light",
+          "slug": "y-dark-to-light"
+        },
+        {
+          "gradient": "linear-gradient(270deg,rgba(217, 254, 208, 1) 0%, rgba(64, 128, 36, 1) 100%)",
+          "name": "Secondary to Tertiary",
+          "slug": "secondary-to-tertiary"
         }
       ]
     },
     "typography": {
       "fontFamilies": [
         {
-          "fontFamily": "\"Inter\", \"Trebuchet MS\", \"Arial\", sans-serif",
+          "fontFamily": "\"Manrope\", sans-serif",
           "name": "Main Font",
-          "slug": "main-font"
+          "slug": "main-font",
+          "fontFace": [
+            {
+              "fontFamily": "Manrope",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/manrope/manrope-v15-latin-regular.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Manrope",
+              "fontStyle": "normal",
+              "fontWeight": "600",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/manrope/manrope-v15-latin-600.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Manrope",
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/manrope/manrope-v15-latin-700.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Manrope",
+              "fontStyle": "normal",
+              "fontWeight": "800",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/manrope/manrope-v15-latin-800.woff2"
+              ]
+            }
+          ]
         },
         {
-          "fontFamily": "\"alverata\", \"Georgia\", serif",
-          "name": "Serif Font",
-          "slug": "serif-font"
+          "fontFamily": "\"Poppins\", sans-serif",
+          "name": "Alt Font",
+          "slug": "alt-font",
+          "fontFace": [
+            {
+              "fontFamily": "Poppins",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/poppins/poppins-v22-latin-regular.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Poppins",
+              "fontStyle": "normal",
+              "fontWeight": "600",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/poppins/poppins-v22-latin-600.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Poppins",
+              "fontStyle": "normal",
+              "fontWeight": "700",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/poppins/poppins-v22-latin-700.woff2"
+              ]
+            },
+            {
+              "fontFamily": "Poppins",
+              "fontStyle": "normal",
+              "fontWeight": "800",
+              "fontDisplay": "swap",
+              "src": [
+                "file:./assets/fonts/poppins/poppins-v22-latin-800.woff2"
+              ]
+            }
+          ]
         }
       ],
       "fontSizes": [
         {
-          "size": "14px",
+          "size": "0.875rem",
           "name": "Extra Small",
-          "slug": "extra-small"
+          "slug": "kkf-extra-small"
         },
         {
-          "size": "16px",
+          "size": "1rem",
           "name": "Small",
-          "slug": "small"
+          "slug": "kkf-small"
         },
         {
-          "size": "18px",
+          "size": "1.125rem",
           "name": "Normal",
-          "slug": "normal"
+          "slug": "kkf-normal"
         },
         {
-          "size": "22px",
+          "size": "1.375rem",
+          "name": "Normal Plus",
+          "slug": "kkf-normal-plus"
+        },
+        {
+          "size": "clamp(1.63rem, 1.92vw + 0.93rem, 2.13rem)",
           "name": "Medium",
-          "slug": "medium"
+          "slug": "kkf-medium"
         },
         {
-          "size": "40px",
+          "size": "clamp(2.25rem, 1.92vw + 1.56rem, 2.75rem)",
           "name": "Large",
-          "slug": "large"
+          "slug": "kkf-large"
         },
         {
-          "size": "54px",
+          "size": "clamp(2.88rem, 1.92vw + 2.18rem, 3.38rem)",
           "name": "Extra Large",
-          "slug": "extra-large"
+          "slug": "kkf-extra-large"
         },
         {
-          "size": "60px",
+          "size": "clamp(3.5rem,3.37vw + 2.29rem,4.38rem)",
           "name": "huge",
-          "slug": "huge"
+          "slug": "kkf-huge"
         }
       ],
       "lineHeight": true,
@@ -120,31 +211,32 @@
     "shadow": {
       "presets": [
         {
-          "name": "Natural",
-          "slug": "natural",
-          "shadow": "0px 3px 10px rgba(0,0,0,.25)"
+          "name": "Light Shadow",
+          "slug": "light-shadow",
+          "shadow": "0px 4px 8px rgba(0,0,0,.05)"
+        },
+        {
+          "name": "Left Shadow",
+          "slug": "left-shadow",
+          "shadow": "-20px 20px 44px rgba(0, 0, 0, 0.15)"
         }
       ]
     }
   },
   "styles": {
     "typography": {
-      "fontSize": "var(--wp--preset--font-size--normal)",
+      "fontSize": "var(--wp--preset--font-size--kkf-normal)",
       "fontFamily": "var(--wp--preset--font-family--main-font)"
     },
     "color": {
-      "text": "var(--wp--preset--color--black)"
+      "text": "var(--wp--preset--color--dark-gray)"
     },
     "elements": {
       "button": {
         "border": {
-          "radius": "4px"
+          "radius": "30px"
         },
-        "shadow": "0px 7px 30px rgba(192, 132, 12, .5)",
         "spacing": {
-          "margin": {
-            "top": "25px"
-          },
           "padding": {
             "top": "14px",
             "right": "32px",
@@ -153,10 +245,12 @@
           }
         },
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--serif-font)",
-          "fontWeight": "700",
-          "fontSize": "var(--wp--preset--font-size--medium)",
-          "textDecoration": "none"
+          "fontFamily": "var(--wp--preset--font-family--alt-font)",
+          "fontWeight": "600",
+          "fontSize": "var(--wp--preset--font-size--kkf-normal)",
+          "textDecoration": "none",
+          "textAlign": "center",
+          "textTransform": "uppercase"
         },
         "color": {
           "text": "var(--wp--preset--color--black)",
@@ -164,7 +258,7 @@
         },
         ":hover": {
           "color": {
-            "text": "#000000",
+            "text": "var(--wp--preset--color--white)",
             "background": "var(--wp--preset--color--secondary)"
           },
           "typography": {
@@ -173,41 +267,40 @@
         },
         ":focus": {
           "color": {
-            "text": "#000000",
+            "text": "var(--wp--preset--color--white)",
             "background": "var(--wp--preset--color--secondary)"
           },
           "typography": {
             "textDecoration": "none"
           }
-        },
-        "css": "display: inline-block; text-align: center;"
+        }
       },
       "h1": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--serif-font)",
-          "fontWeight": "700",
-          "fontSize": "var(--wp--preset--font-size--extra-large)"
+          "fontFamily": "var(--wp--preset--font-family--alt-font)",
+          "fontWeight": "600",
+          "fontSize": "var(--wp--preset--font-size--kkf-extra-large)"
         }
       },
       "h2": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--serif-font)",
-          "fontWeight": "700",
-          "fontSize": "var(--wp--preset--font-size--large)"
+          "fontFamily": "var(--wp--preset--font-family--alt-font)",
+          "fontWeight": "600",
+          "fontSize": "var(--wp--preset--font-size--kkf-large)"
         }
       },
       "h3": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--serif-font)",
-          "fontWeight": "700",
-          "fontSize": "var(--wp--preset--font-size--medium)"
+          "fontFamily": "var(--wp--preset--font-family--alt-font)",
+          "fontWeight": "600",
+          "fontSize": "var(--wp--preset--font-size--kkf-medium)"
         }
       },
       "h4": {
         "typography": {
-          "fontFamily": "var(--wp--preset--font-family--serif-font)",
-          "fontWeight": "700",
-          "fontSize": "var(--wp--preset--font-size--normal)"
+          "fontFamily": "var(--wp--preset--font-family--alt-font)",
+          "fontWeight": "600",
+          "fontSize": "var(--wp--preset--font-size--kkf-normal-plus)"
         }
       },
       "link": {
@@ -216,7 +309,7 @@
         },
         "typography": {
           "textDecoration": "none",
-          "fontWeight": "700"
+          "fontWeight": "600"
         },
         ":hover": {
           "color": {

@@ -1,11 +1,10 @@
 html{
-  font-size: 18px;
   scroll-behavior: smooth;
 }
 
 body{
-  font-family: $font-family-main;
-  color: #000;
+  font-family: $font-family-body;
+  color: $color-dark-gray;
   font-size: $font-size-normal;
   overflow-x: hidden;
 }
@@ -74,4 +73,27 @@ img.alignright{
       height: 100%;
     }
   }
+}
+
+.font-size-huge{
+  font-size: $font-size-huge;
+  font-weight: $font-weight-medium;
+  font-family: $font-family-heading;
+}
+
+.object-fit-contain{
+  img{
+    object-fit: contain !important;
+  }
+}
+
+figure.mb-0 > img{
+  margin-bottom: 0px !important;
+}
+
+.mt-neg-50{
+  margin-top: -50px !important;
+}
+.mt-neg-70{
+  margin-top: -70px !important;
 }
